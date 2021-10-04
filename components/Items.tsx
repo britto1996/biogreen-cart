@@ -125,12 +125,12 @@ export default function Items() {
                  <Image style={styles.imageData} source={require("../images/cup.jpg")} />
                  <View style={styles.txtContents}>
                  <Text style={styles.cardText}>{item.name}</Text>
-                  <Text style={styles.priceText}>INR {item.actualPrice}</Text>
+                  <Text style={styles.priceText}>₹ {item.actualPrice}</Text>
                  <View style={styles.counterStyle}>
                       
-                <Icon.Button name="ios-remove" size={15} color="#DBD0C0" onPress={()=>setCount(count - 1)} backgroundColor="#fff" iconStyle={{marginRight:0}} style={styles.deleteIcon} />
+                <Icon.Button name="ios-remove" size={10} color="#007eb9" onPress={()=>setCount(count - 1)} backgroundColor="#fff" iconStyle={{marginRight:0}} style={styles.deleteIcon} />
                  <Text style={styles.counterText}>{count}</Text> 
-                 <Icon.Button name="ios-add" size={15} color="#DBD0C0" onPress={()=>setCount(count + 1)} backgroundColor="#fff" iconStyle={{marginRight:0}} style={styles.addIcon} />
+                 <Icon.Button name="ios-add" size={10} color="#007eb9" onPress={()=>setCount(count + 1)} backgroundColor="#fff" iconStyle={{marginRight:0}} style={styles.addIcon} />
 
                  <View>
                      <Icon name="ios-trash" size={20} color="#6F4C5B"  /> 
@@ -197,16 +197,30 @@ txtContents:{
     marginLeft:25
   },
   deleteIcon:{
-      borderRadius:15,
-      backgroundColor:"gray",
-      height:30,
-      width:30
+    //   borderRadius:15,
+    //   backgroundColor:"gray",
+    //   height:30,
+    //   width:30
+
+
+    width: 25,
+    height: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#d1d1d1',
   },
   addIcon:{
-      borderRadius:15,
-      backgroundColor:"gray",
-      height:30,
-      width:30
+    //   borderRadius:15,
+    //   backgroundColor:"gray",
+    //   height:30,
+    //   width:30
+
+
+    width: 25,
+    height: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#d1d1d1',
   },
 
 })
